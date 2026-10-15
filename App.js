@@ -1,20 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import Profile from "./Profile";
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Profile></Profile>
+      <Text style={styles.title}>Pertemuan 2</Text>
+      <Profile></Profile>
+      <Profile></Profile>
+      <Profile></Profile>
+      <Profile></Profile>
+      <Profile></Profile>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: "#00f",
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  title: {
+    color: "#fff",
+    fontSize: 24,
+    fontWeight: "bold",
   },
 });
+
+export default App;
