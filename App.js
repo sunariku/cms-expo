@@ -5,9 +5,9 @@ import Profile from "./Profile";
 const App = () => {
   return (
     <View style={styles.container}>
-      <Profile></Profile>
+      <Profile namaLengkap={"Made Subali"}></Profile>
       <Text style={styles.title}>Pertemuan 2</Text>
-      <Profile></Profile>
+      <Profile namaLengkap={"Putu Dodo"}></Profile>
       <Profile></Profile>
       <Profile></Profile>
       <Profile></Profile>
